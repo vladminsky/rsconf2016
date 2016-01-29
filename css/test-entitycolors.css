@@ -1,0 +1,1219 @@
+/*rgb(51, 51, 51)*/ /*rgb(0, 190, 160)*/ /*rgb(28, 131, 0)*/ /*rgb(100, 152, 216)*/ /*rgb(216, 100, 100)*/ /*rgb(25, 25, 112)*/ /*rgb(255, 198, 0)*/ /*rgb(204, 102, 0)*/ /*rgb(221, 119, 9)*/ /*rgb(199, 165, 3)*/ /*rgb(183, 135, 79)*/ /*rgb(167, 116, 62)*/ /*rgb(138, 33, 37)*/ /*rgb(153, 153, 153)*/ /*rgb(138, 192, 240)*/ /*rgb(68, 145, 144)*/ /*rgb(174, 203, 106)*/ /*rgb(133, 150, 167)*/
+
+/*
+    Elements used to color code system entities: 'userstory', 'bug' etc.
+
+    Contents:
+
+        Default colors
+        'Project' 'Team' 'User' colors
+        'Epic' colors
+        'Feature' colors
+        'User Story' colors
+        'Task' colors
+        'Bug' colors
+        'Request' colors
+        'Test Case' colors
+        'Test Plan' colors
+        'Test Plan Run' colors
+        'Test Run' colors
+        'Impediment' colors
+        'Release' colors
+        'Iteration' + 'Team Iteration' colors
+        'Build' colors
+        'Project Member' colors
+
+
+   '.graphical-report__..' - style for Charts in graphical reports
+*/
+
+/* region Default colors, 'Program', 'Project' , 'Team', 'User' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--program,
+.tau-entity-icon.tau-entity-icon--project,
+.tau-entity-icon.tau-entity-icon--team,
+.tau-entity-icon.tau-entity-icon--mytask {
+    color: rgb(41, 41, 41);
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+.tau-entity-color--program,
+.tau-entity-color--project,
+.tau-entity-color--team,
+.tau-entity-color--mytask {
+    color: rgb(41, 41, 41);
+}
+
+.tau-entity-border--program,
+.tau-entity-border--project,
+.tau-entity-border--team,
+.tau-entity-border--mytask {
+    border-color: rgb(46, 46, 46);
+}
+
+.tau-checkbox--entity--program > .tau-checkbox__icon,
+.tau-checkbox--entity--project > .tau-checkbox__icon,
+.tau-checkbox--entity--team > .tau-checkbox__icon,
+.tau-checkbox--entity--mytask > .tau-checkbox__icon {
+    border-color: rgba(51, 51, 51, 0.7);
+}
+
+.tau-checkbox--entity--program:hover > .tau-checkbox__icon,
+.tau-checkbox--entity--project:hover > .tau-checkbox__icon,
+.tau-checkbox--entity--team:hover > .tau-checkbox__icon,
+.tau-checkbox--entity--mytask:hover > .tau-checkbox__icon {
+    border-color: #333;
+}
+
+.tau-checkbox--entity--program > input[type="checkbox"]:checked + .tau-checkbox__icon,
+.tau-checkbox--entity--project > input[type="checkbox"]:checked + .tau-checkbox__icon,
+.tau-checkbox--entity--team > input[type="checkbox"]:checked + .tau-checkbox__icon,
+.tau-checkbox--entity--mytask > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(51, 51, 51, 0.7);
+}
+
+.tau-list-user > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-user,
+.tau-list-requester > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-requester,
+.tau-list-team > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-team,
+.tau-list-project > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-project,
+.tau-list-program > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-program {
+    background-color: #333;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-user,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-team,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-project,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-program {
+    box-shadow: 1px 0 0 rgba(51, 51, 51, 0.6);
+}
+
+.entity-card__program,
+.entity-card__project,
+.entity-card__team {
+    border-left-color: #333;
+}
+
+.tau-text_type_process, .tau-text_type_process:visited,
+.tau-text_type_program, .tau-text_type_program:visited,
+.tau-text_type_project, .tau-text_type_project:visited,
+.tau-text_type_team, .tau-text_type_team:visited,
+.tau-text_type_user, .tau-text_type_user:visited,
+.tau-text_type_program:hover,
+.tau-text_type_project:hover,
+.tau-text_type_team:hover,
+.notification__entity-wrap > .entity-card__program:hover,
+.notification__entity-wrap > .entity-card__project:hover,
+.notification__entity-wrap > .entity-card__team:hover {
+    color: rgb(41, 41, 41);
+}
+
+.graphical-report__program,
+.graphical-report__project,
+.graphical-report__team,
+.graphical-report__user {
+    stroke: #333;
+	fill: #333;
+	background-color: #333;
+    border-color: #333;
+}
+
+.graphical-report__trendline.graphical-report__program,
+.graphical-report__trendline.graphical-report__project,
+.graphical-report__trendline.graphical-report__team,
+.graphical-report__trendline.graphical-report__user {
+    stroke: rgb(46, 46, 46);
+}
+
+/* endregion */
+
+/* region 'Epic' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--epic,
+.tau-entity-background--epic {
+    background-color: rgba(0, 190, 160, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--epic,
+.tau-entity-color--epic {
+    color: rgb(0, 152, 128);
+}
+
+.tau-entity-border--epic {
+    border-color: rgb(0, 171, 144);
+}
+
+.tau-checkbox--entity--epic > .tau-checkbox__icon {
+    border-color: rgba(0, 190, 160, 0.7);
+}
+
+.tau-checkbox--entity--epic:hover > .tau-checkbox__icon {
+    border-color: #00bea0;
+}
+
+.tau-checkbox--entity--epic > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(0, 190, 160, 0.7);
+}
+
+.tau-card-v2_type_epic:before,
+.tau-btn.tau-epic:before,
+.tau-list-epic > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-epic {
+    background-color: #00bea0;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-epic {
+    box-shadow: 1px 0 0 rgba(0, 190, 160, 0.6);
+}
+
+.graphical-report__epic{
+	stroke: #00bea0;
+	fill: #00bea0;
+    background-color: #00bea0;
+    border-color: #00bea0;
+}
+
+.graphical-report__trendline.graphical-report__epic {
+    stroke: rgb(0, 171, 144);
+}
+
+.tau-text_type_epic,
+.tau-text_type_epic:visited,
+.tau-text_type_epic:hover,
+.notification__entity-wrap > .entity-card__epic:hover {
+    color: rgb(0, 152, 128);
+}
+
+/* endregion */
+
+/* region 'Feature' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--feature,
+.tau-entity-background--feature {
+    background-color: rgba(28, 131, 0, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--feature,
+.tau-entity-color--feature {
+    color: rgb(22, 105, 0);
+}
+
+.tau-entity-border--feature {
+    border-color: rgb(25, 118, 0);
+}
+
+.tau-checkbox--entity--feature > .tau-checkbox__icon {
+    border-color: rgba(28, 131, 0, 0.7);
+}
+
+.tau-checkbox--entity--feature:hover > .tau-checkbox__icon {
+    border-color: #1c8300;
+}
+
+.tau-checkbox--entity--feature > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(28, 131, 0, 0.7);
+}
+
+.tau-card-v2_type_feature:before,
+.tau-btn.tau-feature:before,
+.tau-list-feature > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-feature {
+    background-color: #1c8300;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-feature {
+    box-shadow: 1px 0 0 rgba(28, 131, 0, 0.6);
+}
+
+.entity-card__feature {
+    border-left-color: #1c8300;
+}
+
+.graphical-report__feature {
+    stroke: #1c8300;
+    fill: #1c8300;
+    background-color: #1c8300;
+    border-color: #1c8300;
+}
+
+.graphical-report__trendline.graphical-report__feature {
+    stroke: rgb(25, 118, 0);
+}
+
+.tau-text_type_feature,
+.tau-text_type_feature:visited,
+.tau-text_type_feature:hover,
+.notification__entity-wrap > .entity-card__feature:hover {
+    color: rgb(22, 105, 0);
+}
+
+/* endregion */
+
+/* region 'User Story' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--userstory,
+.tau-entity-background--userstory {
+    background-color: rgba(100, 152, 216, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--userstory,
+.tau-entity-color--userstory {
+    color: rgb(80, 122, 173);
+}
+
+.tau-entity-border--userstory {
+    border-color: rgb(90, 137, 194);
+}
+
+.tau-checkbox--entity--userstory > .tau-checkbox__icon {
+    border-color: rgba(100, 152, 216, 0.7);
+}
+
+.tau-checkbox--entity--userstory:hover > .tau-checkbox__icon {
+    border-color: #6498d8;
+}
+
+.tau-checkbox--entity--userstory > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(100, 152, 216, 0.7);
+}
+
+.tau-card-v2_type_userstory:before,
+.tau-btn.tau-userstory:before,
+.tau-list-userstory > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-userstory {
+    background-color: #6498d8;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-userstory {
+    box-shadow: 1px 0 0 rgba(100, 152, 216, 0.6);
+}
+
+.entity-card__userstory {
+    border-left-color: #6498d8;
+}
+
+.graphical-report__userstory {
+    stroke: #6498d8;
+    fill: #6498d8;
+    background-color: #6498d8;
+    border-color: #6498d8;
+}
+
+.graphical-report__trendline.graphical-report__userstory {
+    stroke: rgb(90, 137, 194);
+}
+
+.tau-text_type_userstory,
+.tau-text_type_userstory:visited,
+.tau-text_type_userstory:hover,
+.notification__entity-wrap > .entity-card__userstory:hover {
+    color: rgb(80, 122, 173);
+}
+
+/* endregion */
+
+/* region 'Task' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--task,
+.tau-entity-background--task {
+    background-color: rgba(25, 25, 112, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--task,
+.tau-entity-color--task {
+    color: rgb(20, 20, 90);
+}
+
+.tau-entity-border--task {
+    border-color: rgb(23, 23, 101);
+}
+
+.tau-checkbox--entity--task > .tau-checkbox__icon {
+    border-color: rgba(25, 25, 112, 0.7);
+}
+
+.tau-checkbox--entity--task:hover > .tau-checkbox__icon {
+    border-color: #191970;
+}
+
+.tau-checkbox--entity--task > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(25, 25, 112, 0.7);
+}
+
+.tau-card-v2_type_task:before,
+.tau-btn.tau-task:before,
+.tau-list-task > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-task {
+    background-color: #191970;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-task {
+    box-shadow: 1px 0 0 rgba(25, 25, 112, 0.6);
+}
+
+.entity-card__task {
+    border-left-color: #191970;
+}
+
+.graphical-report__task {
+	stroke: #191970;
+	fill: #191970;
+    background-color: #191970;
+    border-color: #191970;
+}
+
+.graphical-report__trendline.graphical-report__task {
+    stroke: rgb(23, 23, 101);
+}
+
+.tau-text_type_task,
+.tau-text_type_task:visited,
+.tau-text_type_task:hover,
+.notification__entity-wrap > .entity-card__task:hover {
+    color: rgb(20, 20, 90);
+}
+
+/* endregion */
+
+/* region 'Bug' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--bug,
+.tau-entity-background--bug {
+    background-color: rgba(216, 100, 100, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--bug,
+.tau-entity-color--bug {
+    color: rgb(173, 80, 80);
+}
+
+.tau-entity-border--bug {
+    border-color: rgb(194, 90, 90);
+}
+
+.tau-checkbox--entity--bug > .tau-checkbox__icon {
+    border-color: rgba(216, 100, 100, 0.7);
+}
+
+.tau-checkbox--entity--bug:hover > .tau-checkbox__icon {
+    border-color: #d86464;
+}
+
+.tau-checkbox--entity--bug > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(216, 100, 100, 0.7);
+}
+
+.tau-card-v2_type_bug:before,
+.tau-btn.tau-bug:before,
+.tau-list-bug > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-bug {
+    background-color: #d86464;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-bug {
+    box-shadow: 1px 0 0 rgba(216, 100, 100, 0.6);
+}
+
+.entity-card__bug {
+    border-left-color: #d86464;
+}
+
+.graphical-report__bug {
+	stroke: #d86464;
+	fill: #d86464;
+    background-color: #d86464;
+    border-color: #d86464;
+}
+
+.graphical-report__trendline.graphical-report__bug {
+    stroke: rgb(194, 90, 90);
+
+}
+
+.tau-text_type_bug,
+.tau-text_type_bug:visited
+.tau-text_type_bug:hover,
+.notification__entity-wrap > .entity-card__bug:hover {
+    color: rgb(173, 80, 80);
+}
+
+/* endregion */
+
+/* region 'Request' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--request,
+.tau-entity-background--request {
+    background-color: rgba(255, 198, 0, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--request,
+.tau-entity-color--request {
+    color: rgb(204, 158, 0);
+}
+
+.tau-entity-border--request {
+    border-color: rgb(230, 178, 0);
+}
+
+.tau-checkbox--entity--request > .tau-checkbox__icon {
+    border-color: rgba(255, 198, 0, 0.7);
+}
+
+.tau-checkbox--entity--request:hover > .tau-checkbox__icon {
+    border-color: #ffc600;
+}
+
+.tau-checkbox--entity--request > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(255, 198, 0, 0.7);
+}
+
+.tau-card-v2_type_request:before,
+.tau-btn.tau-request:before,
+.tau-list-request > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-request {
+    background-color: #ffc600;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-request {
+    box-shadow: 1px 0 0 rgba(255, 198, 0, 0.6);
+}
+
+.entity-card__request {
+    border-left-color: #ffc600;
+}
+
+.graphical-report__request {
+	stroke: #ffc600;
+	fill: #ffc600;
+    background-color: #ffc600;
+    border-color: #ffc600;
+}
+
+.graphical-report__trendline.graphical-report__request {
+    stroke: rgb(230, 178, 0);
+}
+
+.tau-text_type_request,
+.tau-text_type_request:visited,
+.tau-text_type_request:hover,
+.notification__entity-wrap > .entity-card__request:hover {
+    color: rgb(204, 158, 0);
+}
+
+/* endregion */
+
+/* region 'Test Case' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--testcase,
+.tau-entity-background--testcase {
+    background-color: rgba(204, 102, 0, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--testcase,
+.tau-entity-color--testcase {
+    color: rgb(163, 82, 0);
+}
+
+.tau-entity-border--testcase {
+    border-color: rgb(184, 92, 0);
+}
+
+.tau-checkbox--entity--testcase > .tau-checkbox__icon {
+    border-color: rgba(204, 102, 0, 0.7);
+}
+
+.tau-checkbox--entity--testcase:hover > .tau-checkbox__icon {
+    border-color: #cc6600;
+}
+
+.tau-checkbox--entity--testcase > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(204, 102, 0, 0.7);
+}
+
+.tau-card-v2_type_testcase:before,
+.tau-btn.tau-testcase:before,
+.tau-list-testcase > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testcase {
+    background-color: #cc6600;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testcase {
+    box-shadow: 1px 0 0 rgba(204, 102, 0, 0.6);
+}
+
+.entity-card__testcase {
+    border-left-color: #cc6600;
+}
+
+.graphical-report__testcase {
+    stroke: #cc6600;
+    fill: #cc6600;
+    background-color: #cc6600;
+    border-color: #cc6600;
+}
+
+.graphical-report__trendline.graphical-report__testcase {
+    stroke: rgb(184, 92, 0);
+}
+
+.tau-text_type_testcase,
+.tau-text_type_testcase:visited,
+.tau-text_type_testcase:hover,
+.notification__entity-wrap > .entity-card__testcase:hover {
+    color: rgb(163, 82, 0);
+}
+
+/* endregion */
+
+/* region 'Test Case Run' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--testcaserun,
+.tau-entity-background--testcaserun {
+    background-color: rgba(221, 119, 9, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--testcaserun,
+.tau-entity-color--testcaserun {
+    color: rgb(177, 95, 7);
+}
+
+.tau-entity-border--testcaserun {
+    border-color: rgb(199, 107, 8);
+}
+
+.tau-checkbox--entity--testcaserun > .tau-checkbox__icon {
+    border-color: rgba(221, 119, 9, 0.7);
+}
+
+.tau-checkbox--entity--testcaserun:hover > .tau-checkbox__icon {
+    border-color: #dd7709;
+}
+
+.tau-checkbox--entity--testcaserun > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(221, 119, 9, 0.7);
+}
+
+.tau-card-v2_type_testcaserun:before,
+.tau-btn.tau-testcaserun:before,
+.tau-list-testcaserun > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testcaserun {
+    background-color: #dd7709;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testcaserun {
+    box-shadow: 1px 0 0 rgba(221, 119, 9, 0.6);
+}
+
+.entity-card__testcaserun {
+    border-left-color: #dd7709;
+}
+
+.graphical-report__testcaserun {
+	stroke: #dd7709;
+	fill: #dd7709;
+    background-color: #dd7709;
+    border-color: #dd7709;
+}
+
+.graphical-report__trendline.graphical-report__testcaserun {
+    stroke: rgb(199, 107, 8);
+}
+
+.tau-text_type_testcaserun,
+.tau-text_type_testcaserun:visited,
+.tau-text_type_testcaserun:hover,
+.notification__entity-wrap > .entity-card__testcaserun:hover {
+    color: rgb(177, 95, 7);
+}
+
+/* endregion */
+
+/* region 'Test Plan' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--testplan,
+.tau-entity-background--testplan {
+    background-color: rgba(199, 165, 3, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--testplan,
+.tau-entity-color--testplan {
+    color: rgb(159, 132, 2);
+}
+
+.tau-entity-border--testplan {
+    border-color: rgb(179, 149, 3);
+}
+
+.tau-checkbox--entity--testplan > .tau-checkbox__icon {
+    border-color: rgba(199, 165, 3, 0.7);
+}
+
+.tau-checkbox--entity--testplan:hover > .tau-checkbox__icon {
+    border-color: #c7a503;
+}
+
+.tau-checkbox--entity--testplan > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(199, 165, 3, 0.7);
+}
+
+.tau-card-v2_type_testplan:before,
+.tau-btn.tau-testplan:before,
+.tau-list-testplan > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testplan {
+    background-color: #c7a503;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testplan {
+    box-shadow: 1px 0 0 rgba(199, 165, 3, 0.6);
+}
+
+.entity-card__testplan {
+    border-left-color: #c7a503;
+}
+
+.graphical-report__testplan {
+	stroke: #c7a503;
+	fill: #c7a503;
+    background-color: #c7a503;
+    border-color: #c7a503;
+}
+
+.graphical-report__trendline.graphical-report__testplan {
+    stroke: rgb(179, 149, 3);
+}
+
+.tau-text_type_testplan,
+.tau-text_type_testplan:visited,
+.tau-text_type_testplan:hover,
+.notification__entity-wrap > .entity-card__testplan:hover {
+    color: rgb(159, 132, 2);
+}
+
+/* endregion */
+
+/* region 'Test Run' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--testrun,
+.tau-entity-background--testrun {
+    background-color: rgba(183, 135, 79, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--testrun,
+.tau-entity-color--testrun {
+    color: rgb(146, 108, 63);
+}
+
+.tau-entity-border--testrun {
+    border-color: rgb(165, 122, 71);
+}
+
+.tau-checkbox--entity--testrun > .tau-checkbox__icon {
+    border-color: rgba(183, 135, 79, 0.7);
+}
+
+.tau-checkbox--entity--testrun:hover > .tau-checkbox__icon {
+    border-color: #b7874f;
+}
+
+.tau-checkbox--entity--testrun > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(183, 135, 79, 0.7);
+}
+.entity-card__testrun {
+    border-left-color: #b7874f;
+}
+
+.graphical-report__testrun {
+    stroke: #b7874f;
+    fill: #b7874f;
+    background-color: #b7874f;
+    border-color: #b7874f;
+}
+
+.graphical-report__trendline.graphical-report__testrun {
+    stroke: rgb(165, 122, 71);
+}
+
+.tau-text_type_testrun,
+.tau-text_type_testrun:visited,
+.tau-text_type_testrun:hover,
+.notification__entity-wrap > .entity-card__testrun:hover {
+    color: rgb(146, 108, 63);
+}
+
+/* endregion */
+
+/* region 'Test Plan Run' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--testplanrun,
+.tau-entity-background--testplanrun {
+    background-color: rgba(167, 116, 62, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--testplanrun,
+.tau-entity-color--testplanrun {
+    color: rgb(134, 93, 50);
+}
+
+.tau-entity-border--testplanrun {
+    border-color: rgb(150, 104, 56);
+}
+
+.tau-checkbox--entity--testplanrun > .tau-checkbox__icon {
+    border-color: rgba(167, 116, 62, 0.7);
+}
+
+.tau-checkbox--entity--testplanrun:hover > .tau-checkbox__icon {
+    border-color: #a7743e;
+}
+
+.tau-checkbox--entity--testplanrun > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(167, 116, 62, 0.7);
+}
+
+.tau-card-v2_type_testplanrun:before,
+.tau-btn.tau-testplanrun:before,
+.tau-list-testplanrun > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testplanrun {
+    background-color: #a7743e;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-testplanrun {
+    box-shadow: 1px 0 0 rgba(167, 116, 62, 0.6);
+}
+
+.entity-card__testplanrun {
+    border-left-color: #a7743e;
+}
+
+.graphical-report__testplanrun {
+	stroke: #a7743e;
+	fill: #a7743e;
+    background-color: #a7743e;
+    border-color: #a7743e;
+}
+
+.graphical-report__trendline.graphical-report__testplanrun {
+    stroke: rgb(150, 104, 56);
+}
+
+.tau-text_type_testplanrun,
+.tau-text_type_testplanrun:visited,
+.tau-text_type_testplanrun:hover,
+.notification__entity-wrap > .entity-card__testplanrun:hover{
+    color: rgb(134, 93, 50);
+}
+
+/* endregion */
+
+/* region 'Impediment' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--impediment,
+.tau-entity-background--impediment {
+    background-color: rgba(138, 33, 37, 0.9);
+}
+
+.tau-entity-icon.tau-entity-icon--impediment,
+.tau-entity-color--impediment {
+    color: #fff;
+}
+
+.tau-entity-border--impediment {
+    border-color: rgb(124, 30, 33);
+}
+
+.tau-checkbox--entity--impediment > .tau-checkbox__icon {
+    border-color: rgba(138, 33, 37, 0.7);
+}
+
+.tau-checkbox--entity--impediment:hover > .tau-checkbox__icon {
+    border-color: #8a2125;
+}
+
+.tau-checkbox--entity--impediment > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(138, 33, 37, 0.7);
+}
+
+.tau-card-v2_type_impediment:before,
+.tau-list-impediment > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-impediment {
+    background-color: #8a2125;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-impediment {
+    box-shadow: 1px 0 0 rgba(138, 33, 37, 0.6);
+}
+
+.entity-card__impediment {
+    border-left-color: #8a2125;
+}
+
+.graphical-report__impediment {
+	stroke: #8a2125;
+	fill: #8a2125;
+    background-color: #8a2125;
+    border-color: #8a2125;
+}
+
+.graphical-report__trendline.graphical-report__impediment {
+    stroke: rgb(124, 30, 33);
+}
+
+.tau-text_type_impediment,
+.tau-text_type_impediment:visited,
+.tau-text_type_impediment:hover {
+    color: rgb(110, 26, 30);
+}
+
+/* endregion */
+
+/* region 'Release' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--release,
+.tau-entity-background--release {
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--release,
+.tau-entity-color--release {
+    color: rgb(122, 122, 122);
+}
+
+.tau-entity-border--release {
+    border-color: rgb(138, 138, 138);
+}
+
+.tau-checkbox--entity--release > .tau-checkbox__icon {
+    border-color: rgba(153, 153, 153, 0.7);
+}
+
+.tau-checkbox--entity--release:hover > .tau-checkbox__icon {
+    border-color: #999;
+}
+
+.tau-checkbox--entity--release > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(153, 153, 153, 0.7);
+}
+
+.tau-card-v2_type_release:before,
+.tau-btn.tau-release:before,
+.tau-list-release > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-release {
+    background-color: #999;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-release {
+    box-shadow: 1px 0 0 rgba(153, 153, 153, 0.6);
+}
+
+.entity-card__release {
+    border-left-color: #999;
+}
+
+.graphical-report__release {
+	stroke: #999;
+	fill: #999;
+    background-color: #999;
+    border-color: #999;
+}
+
+.graphical-report__trendline.graphical-report__release {
+    stroke: rgb(138, 138, 138);
+}
+
+.tau-text_type_release,
+.tau-text_type_release:visited,
+.tau-text_type_release:hover,
+.notification__entity-wrap > .entity-card__release:hover {
+    color: rgb(122, 122, 122);
+}
+
+/* endregion */
+
+/* region 'Iteration' + 'Team Iteration' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--iteration,
+.tau-entity-icon.tau-entity-icon--teamiteration,
+.tau-entity-icon.tau-entity-icon--squaditeration,
+.tau-entity-background--iteration,
+.tau-entity-background--teamiteration,
+.tau-entity-background--squaditeration {
+    background-color: rgba(138, 192, 240, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--iteration,
+.tau-entity-icon.tau-entity-icon--teamiteration,
+.tau-entity-icon.tau-entity-icon--squaditeration,
+.tau-entity-color--iteration,
+.tau-entity-color--teamiteration,
+.tau-entity-color--squaditeration {
+    color: rgb(110, 154, 192);
+}
+
+.tau-entity-border--iteration,
+.tau-entity-border--teamiteration,
+.tau-entity-border--squaditeration {
+    border-color: rgb(124, 173, 216);
+}
+
+.tau-checkbox--entity--iteration > .tau-checkbox__icon,
+.tau-checkbox--entity--teamiteration > .tau-checkbox__icon,
+.tau-checkbox--entity--squaditeration > .tau-checkbox__icon {
+    border-color: rgba(138, 192, 240, 0.7);
+}
+
+.tau-checkbox--entity--iteration:hover > .tau-checkbox__icon,
+.tau-checkbox--entity--teamiteration:hover > .tau-checkbox__icon,
+.tau-checkbox--entity--squaditeration:hover > .tau-checkbox__icon {
+    border-color: #8ac0f0;
+}
+
+.tau-checkbox--entity--iteration > input[type="checkbox"]:checked + .tau-checkbox__icon,
+.tau-checkbox--entity--teamiteration > input[type="checkbox"]:checked + .tau-checkbox__icon,
+.tau-checkbox--entity--squaditeration > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(138, 192, 240, 0.7);
+}
+
+.tau-card-v2_type_iteration:before,
+.tau-btn.tau-iteration:before,
+.tau-list-iteration > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-iteration,
+.tau-card-v2_type_teamiteration:before,
+.tau-btn.tau-teamiteration:before,
+.tau-list-teamiteration > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-teamiteration {
+    background-color: #8ac0f0;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-iteration,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-teamiteration {
+    box-shadow: 1px 0 0 rgba(138, 192, 240, 0.6);
+}
+
+.entity-card__iteration,
+.entity-card__teamiteration {
+    border-left-color: #8ac0f0;
+}
+
+.graphical-report__iteration,
+.graphical-report__teamiteration {
+	stroke: #8ac0f0;
+	fill: #8ac0f0;
+    background-color: #8ac0f0;
+    border-color: #8ac0f0;
+}
+
+.graphical-report__trendline.graphical-report__iteration {
+    stroke: rgb(124, 173, 216);
+}
+
+.tau-text_type_iteration,
+.tau-text_type_iteration:visited,
+.tau-text_type_teamiteration,
+.tau-text_type_teamiteration:visited,
+.tau-text_type_iteration:hover,
+.tau-text_type_teamiteration:hover,
+.notification__entity-wrap > .entity-card__iteration:hover,
+.notification__entity-wrap > .entity-card__teamiteration:hover {
+    color: rgb(110, 154, 192);
+}
+
+/* endregion */
+
+/* region 'Build' colors --------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--build,
+.tau-entity-background--build {
+    background-color: rgba(68, 145, 144, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--build,
+.tau-entity-color--build {
+    color: rgb(54, 116, 115);
+}
+
+.tau-entity-border--build {
+    border-color: rgb(61, 131, 130);
+}
+
+.tau-checkbox--entity--build > .tau-checkbox__icon {
+    border-color: rgba(68, 145, 144, 0.7);
+}
+
+.tau-checkbox--entity--build:hover > .tau-checkbox__icon {
+    border-color: #449190;
+}
+
+.tau-checkbox--entity--build > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(68, 145, 144, 0.7);
+}
+
+.tau-card-v2_type_build:before,
+.tau-btn.tau-build:before,
+.tau-list-build > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-build {
+    background-color: #449190;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-build {
+    box-shadow: 1px 0 0 rgba(68, 145, 144, 0.6);
+}
+
+.entity-card__build {
+    border-left-color: #449190;
+}
+
+.graphical-report__build {
+	stroke: #449190;
+	fill: #449190;
+    background-color: #449190;
+    border-color: #449190;
+}
+
+.graphical-report__trendline.graphical-report__build {
+    stroke: rgb(61, 131, 130);
+}
+
+.tau-text_type_build,
+.tau-text_type_build:visited,
+.tau-text_type_build:hover,
+.notification__entity-wrap > .entity-card__build:hover {
+    color: rgb(54, 116, 115);
+}
+
+/* endregion */
+
+/* region 'Project Member' colors + 'User&Team Project Allocation' colors --------------------------------------------------*/
+
+.tau-card-v2_type_projectmember:before,
+.tau-btn.tau-projectmember:before,
+.tau-list-projectmember > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-projectmember,
+
+.tau-card-v2_type_userprojectallocation:before,
+.tau-btn.tau-userprojectallocation:before,
+.tau-list-userprojectallocation > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-userprojectallocation,
+
+.tau-card-v2_type_teamprojectallocation:before,
+.tau-btn.tau-teamprojectallocation:before,
+.tau-list-teamprojectallocation > .tau-list-line > .tau-elems-table .tau-drag-handler,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-teamprojectallocation {
+    background-color: #aecb6a;
+}
+
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-projectmember,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-userprojectallocation,
+._tc-timeline-navigator > .tc-histogram > .tc-item > .tc-meter.tc-teamprojectallocation {
+    box-shadow: 1px 0 0 rgba(174, 203, 106, 0.6);
+}
+
+.entity-card__projectmember,
+.entity-card__userprojectallocation,
+.entity-card__teamprojectallocation {
+    border-left-color: #aecb6a;
+}
+
+.graphical-report__projectmember,
+.graphical-report__userprojectallocation,
+.graphical-report__teamprojectallocation {
+    stroke: #aecb6a;
+    fill: #aecb6a;
+    background-color: #aecb6a;
+    border-color: #aecb6a;
+}
+
+.graphical-report__trendline.graphical-report__projectmember,
+.graphical-report__trendline.graphical-report__userprojectallocation,
+.graphical-report__trendline.graphical-report__teamprojectallocation {
+    stroke: rgb(157, 183, 95);
+}
+
+.tau-text_type_projectmember,
+.tau-text_type_projectmember:visited,
+.tau-text_type_projectmember:hover,
+.tau-text_type_userprojectallocation,
+.tau-text_type_userprojectallocation:visited,
+.tau-text_type_userprojectallocation:hover,
+.tau-text_type_teamprojectallocation,
+.tau-text_type_teamprojectallocation:visited,
+.tau-text_type_teamprojectallocation:hover {
+    color: rgb(139, 162, 85);
+}
+
+/* endregion */
+
+/* 'Comment' colors
+----------------------------------------------------------------------------------------------------*/
+
+.tau-entity-icon.tau-entity-icon--comment,
+.tau-entity-background--comment {
+    background-color: rgba(133, 150, 167, 0.2);
+}
+
+.tau-entity-icon.tau-entity-icon--comment,
+.tau-entity-color--comment {
+    color: rgb(106, 120, 134);
+}
+
+.tau-entity-border--comment {
+    border-color: rgb(120, 135, 150);
+}
+
+.tau-checkbox--entity--comment > .tau-checkbox__icon {
+    border-color: rgba(133, 150, 167, 0.7);
+}
+
+.tau-checkbox--entity--comment:hover > .tau-checkbox__icon {
+    border-color: #8596a7;
+}
+
+.tau-checkbox--entity--comment > input[type="checkbox"]:checked + .tau-checkbox__icon {
+    background-color: rgba(133, 150, 167, 0.7);
+}
+
+.tau-text_type_comment,
+.tau-text_type_comment:visited,
+.tau-text_type_comment:hover {
+    color: rgb(120, 135, 150);
+}
+
+/* endregion */
+
+/* 'Graphical Report' some missing colours*/
+
+.graphical-report__bar.tau-passed,
+.graphical-report__legend__guide.tau-passed {
+    fill: rgba(49, 118, 0, 1);
+    background: rgba(49, 118, 0, 1);
+}
+
+.graphical-report__bar.tau-failed,
+.graphical-report__legend__guide.tau-failed {
+    fill: rgba(160, 0, 0, 1);
+    background: rgba(160, 0, 0, 1);
+}
+
+.graphical-report__bar.tau-onhold,
+.graphical-report__legend__guide.tau-onhold {
+    fill:rgba(109, 155, 211, 1);
+    background: rgba(109, 155, 211, 1);
+}
+
+.graphical-report__bar.tau-blocked,
+.graphical-report__legend__guide.tau-blocked {
+    fill:rgba(227, 90, 86, 1);
+    background: rgba(227, 90, 86, 1);
+}
+
+.graphical-report__bar.tau-notrun,
+.graphical-report__legend__guide.tau-notrun {
+    fill:rgba(160, 174, 186, 1);
+    background: rgba(160, 174, 186, 1);
+}
+
+/* endregion */
