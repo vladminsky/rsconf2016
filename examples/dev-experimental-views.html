@@ -38,13 +38,15 @@
     <style>
 
         body {
-            margin: 20px 15% 0 15%;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
             font-size: 13px;
         }
 
         .cc {
+            border: solid 0px #000;
             display:inline-block;
-            margin: 10px;
+            margin: 0px;
             float: left;
             width: 1000px;
             height: 400px;
@@ -56,8 +58,8 @@
 </head>
 <body>
 
-<div id="T0" style="display: block;float: none;overflow:auto;height: 200px; border: solid 1px"></div>
-<div id="T1" style="display: block;float: none;overflow:auto;margin-top:10px;font-size: large">
+<div id="T0" style="display: block;float: none;overflow:auto;height: 150px; border: solid 1px"></div>
+<div id="T1" style="display: block;float: none;overflow:auto;margin-top:10px;margin-left:10px;font-size: large">
     <!-- ABS(imdbRating - tomatoRating) < 0.5 -->
     <!-- imdbRating > 8 AND tomatoRating > 8 -->
     <!-- ABS(imdbRating - tomatoRating) < 0.25 AND imdbRating > 8 AND tomatoRating > 8 -->
@@ -85,8 +87,8 @@
                     tauCharts.api.plugins.get('parallel-tooltip')()
                 ]
             },
-            w: 800,
-            h: 400
+            w: 625,
+            h: 300
         }
         ,
         {
@@ -110,8 +112,8 @@
                     })
                 ]
             },
-            w: 400,
-            h: 400
+            w: 300,
+            h: 300
         }
         ,
         {
@@ -122,8 +124,8 @@
                 y: 'Director',
                 settings: {fitModel: 'minimal'}
             },
-            w: 400,
-            h: 400
+            w: 300,
+            h: 300
         }
         ,
         {
@@ -146,8 +148,8 @@
                     })
                 ]
             },
-            w: 400,
-            h: 400
+            w: 300,
+            h: 300
         }
         ,
         {
@@ -158,8 +160,8 @@
                 y: 'Genre',
                 settings: {fitModel: 'fit-width'}
             },
-            w: 200,
-            h: 400
+            w: 180,
+            h: 300
         }
         ,
         {
@@ -170,8 +172,8 @@
                 y: 'Country',
                 settings: {fitModel: 'fit-width'}
             },
-            w: 200,
-            h: 400
+            w: 180,
+            h: 300
         }
 //        ,
 //        {
@@ -279,7 +281,7 @@
             var chart = new tauCharts.Chart(cfg.viz);
 
             chart.on('elementclick', function (chartSender, e) {
-                console.log(e.data);
+                // console.log(e.data);
                 var row = e.data;
                 if (groupedBy.length !== 0) {
                     var g = groupedBy.reduce(function (memo, k) {
